@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    <title>2. Bootstrap forms</title>
+  </head>
+  <body>
+    <div class="container">
+
+<!--
+      The <fieldset> tag is used to group related elements in a form.
+      The <fieldset> tag also draws a box around the related elements.
+ -->
+
+ <div class="jumbotron">
+   <!-- <div class="container"> -->
+
+
+<h1 class="display-3">Jumbotron Header</h1>
+<p class="lead">We just cut and paste the jumbotron from the previous lecture.  </p>
+<hr class="my-2">
+<p>Makes it easy to build a responsive page quickly</p>
+<p class="lead">
+ <a class="btn btn-primary btn-lg " href="http://v4-alpha.getbootstrap.com/examples/narrow-jumbotron/" role="button">More on Bootstrap</a>
+</p>
+<!-- </div> -->
+</div>
+
+  <form>
+
+    <!-- EMAIL SUBMISSION -->
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Your information is kept secure.</small>
+  </div>
+
+  <!-- PASSWORD -->
+
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+
+  <!-- DROPDOWN SELECT -->
+
+
+  <div class="form-group">
+    <label for="exampleSelect1">form-control class</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+    </select>
+  </div>
+
+
+  <!-- MULTIPLE SELECT OPTIONS -->
+
+  <div class="form-group">
+    <label for="exampleSelect2">multiple class has displays more options</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+    </select>
+  </div>
+
+
+  <!-- TEXT AREA -->
+
+  <div class="form-group">
+    <label for="exampleTextarea">Example text area</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+
+
+  <!-- FILE UPLOAD INPUT -->
+
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <small id="fileHelp" class="form-text text-muted">This text is responsive and wraps around to a line depending on the screen size.  It also wraps around if it gets too long.</small>
+  </div>
+
+  <!-- RADIO BUTTONS -->
+
+  <fieldset class="form-group">
+    <legend>Radio buttons</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+
+
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+
+
+
+
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+
+
+  </fieldset>
+
+
+  <!-- CHECK BUTTON -->
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+
+</form>
+
+</div>
+
+  </body>
+</html>
